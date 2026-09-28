@@ -1,0 +1,22 @@
+# 依赖
+vendor/
+node_modules/
+
+# 环境变量（含密钥，不提交）
+.env
+.env.*
+
+# Laravel 缓存与日志
+laravel/bootstrap/cache/
+laravel/storage/logs/
+laravel/storage/framework/cache/
+laravel/storage/framework/sessions/
+laravel/storage/framework/views/
+laravel/storage/*.key
+
+# Vue 构建产物
+dist/
+
+# 系统文件
+.DS_Store
+Thumbs.db
