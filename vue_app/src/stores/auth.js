@@ -22,7 +22,7 @@ export const useAuthStore = defineStore('auth', {
             this.loading = true;
             this.error = null;
             try {
-                await axios.get(`${API_BASE_URL}/sanctum/csrf-cookie`);
+                await axios.get('/sanctum/csrf-cookie');
                 const response = await axios.post(`${API_BASE_URL}/login`, credentials);
                 this.user = response.data.user;
                 localStorage.setItem('user', JSON.stringify(this.user));

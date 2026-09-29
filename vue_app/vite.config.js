@@ -19,7 +19,11 @@ export default defineConfig({
             target: 'http://localhost', // Nginx 服務的位址
             changeOrigin: true,
             ws: true,
-        }
+        },
+        '/sanctum': {
+            target: 'http://localhost',
+            changeOrigin: true,
+        },
     }
   }
 })

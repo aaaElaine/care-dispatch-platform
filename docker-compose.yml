@@ -36,7 +36,7 @@ services:
             APP_KEY: 
             APP_ENV: local
             # Sanctum SPA URL
-            SANCTUM_STATEFUL_DOMAINS: localhost:80,localhost:5173 # 允許 Nginx 或 Vue Dev Server 存取
+            SANCTUM_STATEFUL_DOMAINS: localhost,localhost:5173
             VITE_APP_URL: http://localhost # Vue App URL
         depends_on:
             - mysql_db

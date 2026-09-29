@@ -9,5 +9,5 @@
 </script>
 
 <style scoped>
-# 可以在這裡添加全局樣式
+/* 全局样式可在这里添加 */
 </style>
